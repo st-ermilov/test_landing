@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 16px;
+}
+.active {
+  background-color: #FFFFFF;
+  z-index: 1;
+}

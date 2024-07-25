@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: all 400ms ease;
+
+
+  & a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #83898F;
+    padding: 16px 0;
+    margin: 0 16px;
+    border-bottom: 1px var(--light-gray-color) solid;
+
+    & p {
+      margin: 0;
+    }
+
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  & a:first-child {
+    border-top: 1px var(--light-gray-color) solid;;
+  }
+}
+
+.active {
+  height: 100dvh;
+  z-index: 5;
+}
+
+

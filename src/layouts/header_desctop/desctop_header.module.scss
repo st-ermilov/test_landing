@@ -1,0 +1,41 @@
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1216px;
+  height: 80px;
+
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  min-width: 464px;
+
+
+  & a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    z-index: 2;
+    transition: all 400ms ease;
+    cursor: pointer;
+  }
+
+  & a p {
+    margin: 0;
+  }
+
+  & a > p:hover {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}

@@ -1,0 +1,54 @@
+@use '../../styles/_mixins.scss' as mixins;
+.logo_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    @media screen and (min-width: 1024px) {
+        padding-left: 16px;
+    }
+}
+
+.rounds_container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-height: 30px;
+    min-width: 45px;
+    z-index: 1;
+}
+
+.round {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.round2 {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-gray-color);
+}
+
+.logo_text {
+    @include mixins.headline-5;
+    color: #FFFFFF;
+    z-index: 1;
+    transition: all 400ms ease;
+}
+
+.active {
+    color: black;
+}

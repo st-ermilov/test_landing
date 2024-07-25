@@ -1,0 +1,23 @@
+@use '../../styles/_mixins' as mixin;
+
+.container {
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & h2 {
+    @include mixin.headline-4;
+    margin: 0 0 20px 0;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include mixin.headline-2;
+      text-align: center;
+    }
+
+    & div:last-child {
+      border-bottom: none;
+    }
+  }
+}
